@@ -8,7 +8,7 @@ class DBHelper:
                                      user='root',
                                      password='root',
                                      database='pythontest')
-        query='create table if not exists demo(id  int primary_key,userName varchar(100), phone varchar(12), email varchar(100))'
+        query='create table if not exists user(id  int primary key,userName varchar(100), phone varchar(12), email varchar(100))'
         cur=self.con.cursor()
         cur.execute(query)
         print("created") 
